@@ -1,2 +1,2 @@
 # musculoskeletal_modelling
-Modelling biological systems
+Modelling biological systems - assignment 2 for BME355

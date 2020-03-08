@@ -71,7 +71,6 @@ def get_velocity(a, lm, lt):
     return velocity
 
 
-
 def force_length_tendon(lt):
     """
     :param lt: normalized length of tendon (series elastic element)
@@ -96,7 +95,7 @@ def force_length_tendon(lt):
 
         return tension
 
-    
+
 def force_length_parallel(lm):
     """
     :param lm: normalized length of muscle (contractile element)
@@ -121,6 +120,7 @@ def force_length_parallel(lm):
 
     return force
 
+
 def plot_curves():
     """
     Plot force-length, force-velocity, SE, and PE curves.
@@ -141,6 +141,7 @@ def plot_curves():
     plt.ylabel('Force scale factor')
     plt.tight_layout()
     plt.show()
+
 
 class Gaussian:
     def __init__(self, mu, sigma):
@@ -195,6 +196,7 @@ class Regression():
         for i, basis_function in enumerate(self.basis_functions):
             phi[:,i] = basis_function(x)
         return phi
+
 
 def get_muscle_force_velocity_regression():
     data = np.array([

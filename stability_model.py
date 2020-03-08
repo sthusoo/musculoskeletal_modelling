@@ -122,7 +122,7 @@ def simulate(control, T):
     plt.tight_layout()
     plt.show()
 
-#Question 4
+# Question 4
 simulate(False, 5)
 
 
