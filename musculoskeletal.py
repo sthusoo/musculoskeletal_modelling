@@ -448,7 +448,7 @@ def f(t, x):
 sol = solve_ivp(f, [0, 2], [1], max_step=.01)
 
 forces = []
-for i in sol.y.T:
+for i in sol.y[0]:
     forces.append(muscle.get_force(0.4, i))
 
 plt.figure()
